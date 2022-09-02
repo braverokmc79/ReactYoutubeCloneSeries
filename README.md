@@ -1,20 +1,19 @@
-# [React JS 따라하며-배우는 리액트 노드 - 유튜브 클론 시리즈  - John Ahn ]
+## [React JS 따라하며-배우는 리액트 노드 - 유튜브 클론 시리즈  - John Ahn ]
 
 
-이건 완성본 소스\
+이건 완성본 John Ahn 소스=>
+## https://github.com/jaewonhimnae/react-youtube-clone
 
-# https://github.com/jaewonhimnae/react-youtube-clone
-
-# 인프런   ==>     따라하며 배우는 노드, 리액트 시리즈 - 유튜브 사이트 만들기  
+## 인프런   ==>     따라하며 배우는 노드, 리액트 시리즈 - 유튜브 사이트 만들기  
 https://www.inflearn.com/course/따라하며-배우는-노드-리액트-유튜브-만들기
 
 
-# 유튜브 강의 목록 :   https://www.youtube.com/playlist?list=PL9a7QRYt5fqnlSRu--re7N_1Ean5jFsh3
+## 유튜브 강의 목록 :   https://www.youtube.com/playlist?list=PL9a7QRYt5fqnlSRu--re7N_1Ean5jFsh3
 
 
-# 섹션 0. Node JS
+## 섹션 0. Node JS
 
-강의\
+강의
 
 1.유투브 사이트 만들기\
 2.전체적인 틀 만들고 MongoDB 연결\
