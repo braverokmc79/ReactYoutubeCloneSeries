@@ -8,7 +8,7 @@ const { auth } = require("../middleware/auth");
 role 1 어드민  role 2 특정 부서 어드민
 rele 0 -> 일반유저 ,  role 0 이 아니면 관리자.
 */
-router.get("/auth", auth, (req, res) => {
+router.post("/auth", auth, (req, res) => {
 
     //auth 미들웨어 통해 인증 처리되었으면 Authentication 가 True 이다.
     //따라서, 다음과 같이 유저 정보를 반환 처리한다.
@@ -27,6 +27,7 @@ router.get("/auth", auth, (req, res) => {
 /*2. 회원등록 처리*/
 router.post("/register", (req, res) => {
     const user = new User(req.body);
+    console.log("저장할 user :", user);
 
     //몽고 DB 에 설정된 save  사용한다. 이때  models/User.js  에서 userSchema.pre('save') 호출하면서
     //저장 처리를 진행 한다.
