@@ -1,6 +1,11 @@
 ## [Boiler Plate  소스 ]
 
 
+# 실행 방법  :  
+$ cd server
+
+$ npm run dev
+
 ## 섹션 0. Node JS
 
 
