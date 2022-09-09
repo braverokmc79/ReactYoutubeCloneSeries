@@ -1,10 +1,14 @@
 ## [Boiler Plate  소스 ]
 
 
-# 실행 방법  :  
-$ cd server
+# 실행 방법
 
-$ npm run dev
+1. server 에 디렉토리에서 yarn install
+
+2. client 에 디렉토리에서 yarn install
+
+3. server 에 디렉토리에 npm run dev
+
 
 ## 섹션 0. Node JS
 
