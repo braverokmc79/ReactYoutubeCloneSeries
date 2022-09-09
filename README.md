@@ -1,40 +1,8 @@
-## [React JS 따라하며-배우는 리액트 노드 - 유튜브 클론 시리즈  - John Ahn ]
-
-
-이건 완성본 John Ahn 소스=>
-## https://github.com/jaewonhimnae/react-youtube-clone
-
-## 인프런   ==>     따라하며 배우는 노드, 리액트 시리즈 - 유튜브 사이트 만들기  
-https://www.inflearn.com/course/따라하며-배우는-노드-리액트-유튜브-만들기
-
-
-## 유튜브 강의 목록 :   https://www.youtube.com/playlist?list=PL9a7QRYt5fqnlSRu--re7N_1Ean5jFsh3
+## [Boiler Plate  소스 ]
 
 
 ## 섹션 0. Node JS
 
-강의
-
-1.유투브 사이트 만들기\
-2.전체적인 틀 만들고 MongoDB 연결\
-3.비디오 업로드 FORM 만들기1\
-4.비디오 업로드 FORM 만들기2\
-5.Multer로 노드 서버에 비디오 저장하기\
-6. ffmpeg로 비디오 썸네일 생성하기\
-7.비디오 업로드 하기\
-8.랜딩 페이지에 비디오들 나타나게 하기\
-9.비디오 디테일 페이지 만들기\
-10.디테일 비디오 페이지에 Side 비디오 생성\
-11.구독 기능 1\
-12.구독 기능 2\
-13.구독 비디오 페이지\
-14.댓글 기능 생성 1 구조 설명\
-15.댓글 기능 생성 2 Comment js\
-16.댓글 기능 생성 3 SingleComment\
-17.댓글 기능 생성 4 ReplyComment\
-18.좋아요 싫어요 기능1 구조 설명\
-19.좋아요 싫어요 기능2 템플릿, 데이터 가져오기\
-20.좋아요 싫어요 기능 3 클릭시 기능들\
 
 
 # React 앱 만들기 시작하기
