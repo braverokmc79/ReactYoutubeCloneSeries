@@ -1,7 +1,21 @@
-## [Boiler Plate  소스 ]
-
+## [Boiler Plate 소스 ]
 
 # 실행 방법
+
+리액트 "redux-form" redux-form 오류시
+
+"redux-form": "^8.3.8", 삭제후 설치
+
+설치
+
+```
+yarn add redux-form@8.3.8
+
+npm install -g win-node-env
+
+```
+
+##### noejs 새로설치후 몽고DB접속 오류시 localhost ->0.0.0.0
 
 1. server 에 디렉토리에서 yarn install
 
@@ -9,10 +23,7 @@
 
 3. server 에 디렉토리에 npm run dev
 
-
 ## 섹션 0. Node JS
-
-
 
 # React 앱 만들기 시작하기
 
