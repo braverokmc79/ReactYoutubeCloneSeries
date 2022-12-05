@@ -103,6 +103,31 @@ userSchema.methods.generateToken = function (cb) {
 }
 
 
+//5. 업데이트 처리시  : DB에 저장하기 전에 실행한다.
+userSchema.pre('updateOne', function (next) {
+
+    const user = this._update.$set;
+    console.log(" udatep One 실행 ----", user);
+
+    //비밀번호가 변환될때만 다음을 실행하며, 비밀번호가 아닌것은 next()
+    if (user.password) {
+        //비밀번호를 암호와 시킨다.
+        bcrypt.genSalt(saltRounds, function (err, salt) {
+            if (err) return next(err);
+            bcrypt.hash(user.password, salt, function (err, hash) {
+                if (err) return next(err);
+                user.password = hash;
+                console.log(" udatep One 실행 user.password ", user);
+                next();
+            });
+        });
+    } else {
+        next();
+    }
+})
+
+
+
 
 const User = mongoose.model('User', userSchema);
 

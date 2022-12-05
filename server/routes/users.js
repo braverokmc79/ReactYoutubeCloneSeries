@@ -12,6 +12,8 @@ router.post("/auth", auth, (req, res) => {
 
     //auth 미들웨어 통해 인증 처리되었으면 Authentication 가 True 이다.
     //따라서, 다음과 같이 유저 정보를 반환 처리한다.
+    console.log("auth ", auth);
+
     res.status(200).json({
         _id: req.user._id,
         isAdmin: req.user.role === 0 ? false : true,
@@ -88,5 +90,30 @@ router.get("/logout", auth, (req, res) => {
 });
 
 
+
+//5.회원정보 업데이트 처리
+router.post("/update", (req, res) => {
+    const user = new User(req.body);
+    const updateDataId = { _id: req.body.id }
+    const updateDataSet = {
+        $set: {
+            firstName: user.firstName,
+            middleName: user.middleName,
+            lastName: user.lastName,
+            email: user.email,
+            password: user.password,
+            memo: user.memo
+        }
+    }
+    console.log("update   => : ", req.body);
+    //대문자
+    User.updateOne(updateDataId, updateDataSet, (err) => {
+        if (err) return res.json({ success: false, err });
+        return res.status(200).json({
+            success: true
+        });
+    });
+
+})
 
 module.exports = router;

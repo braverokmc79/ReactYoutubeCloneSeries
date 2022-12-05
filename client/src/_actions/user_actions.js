@@ -31,6 +31,7 @@ export function registerUser(dataTomSubmit) {
 
 /** 유저 권한확인 */
 export function auth() {
+    console.log("유저 권한 확인");
     const request = axios.post(`${USER_SERVER}/auth`)
         .then(res => res.data);
 
